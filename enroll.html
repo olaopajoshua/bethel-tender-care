@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enroll — Bethel Tender Care Schools</title>
+  <link rel="stylesheet" href="enroll.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">📞 +234 806 062 5238 &nbsp; | &nbsp; ✉ betheltendercare@gmail.com</div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Bethel Tender Care Schools Logo" class="logo" />
+        <div class="brand-text">
+          <span class="school-name">Bethel Tender Care Schools</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="enroll.html" class="cta">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1>Application — Enroll Now</h1>
+    <p class="lead">Complete this form and we'll contact you with next steps.</p>
+
+    <form id="enrollForm" class="form-grid" novalidate>
+      <fieldset>
+        <legend>Child’s Information</legend>
+        <label>
+          Name of Child in Full
+          <input name="student_name" required placeholder="e.g. John Doe" />
+        </label>
+        <label>
+          Date of Birth
+          <input type="date" name="dob" required />
+        </label>
+        <label>
+          Age
+          <input type="number" name="age" placeholder="e.g. 7" />
+        </label>
+        <label>
+          Gender
+          <select name="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </label>
+        <label>
+          Last Class Attended
+          <input name="last_class" placeholder="e.g. Primary 2" />
+        </label>
+        <label>
+          Last Result
+          <input name="last_result" placeholder="Optional" />
+        </label>
+        <label>
+          Placement Class on Admission
+          <input name="placement_class" placeholder="e.g. Primary 3" />
+        </label>
+        <label>
+          Any Known Illness?
+          <input name="illness" placeholder="If Yes, please specify" />
+        </label>
+        <label>
+          Medication (if any)
+          <input name="medication" placeholder="Optional" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Parent / Guardian Information</legend>
+        <label>
+          Father’s Name
+          <input name="father_name" required />
+        </label>
+        <label>
+          Father’s Occupation
+          <input name="father_occupation" />
+        </label>
+        <label>
+          Father’s Phone No(s)
+          <input name="father_phone" type="tel" />
+        </label>
+        <label>
+          Mother’s Name
+          <input name="mother_name" />
+        </label>
+        <label>
+          Mother’s Occupation
+          <input name="mother_occupation" />
+        </label>
+        <label>
+          Mother’s Phone No(s)
+          <input name="mother_phone" type="tel" />
+        </label>
+        <label>
+          Residential Address
+          <input name="address" required />
+        </label>
+        <label>
+          Email Address (if any)
+          <input name="email" type="email" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Emergency Contact</legend>
+        <label>
+          Name
+          <input name="emergency_name" />
+        </label>
+        <label>
+          Relationship to Child
+          <input name="emergency_relationship" />
+        </label>
+        <label>
+          Phone No(s)
+          <input name="emergency_phone" type="tel" />
+        </label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+        <a class="btn btn-secondary" href="index.html">Back to Home</a>
+      </div>
+    </form>
+
+    <div id="formMessage" class="form-message"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Bethel Tender Care Schools</p>
+    </div>
+  </footer>
+
+  <script src="enroll.js"></script>
+</body>
+</html>

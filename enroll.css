@@ -1,0 +1,234 @@
+/* ===== Base Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Top Bar ===== */
+.top-bar {
+  background: #003366;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  padding: 1rem 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.school-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4e342e;
+}
+
+/* ===== Navigation ===== */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: 500;
+}
+
+.nav a.cta {
+  background: #4e342e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #fdf6e3; /* cream */
+  color: #4e342e; /* chocolate */
+}
+
+/* Top Bar */
+.top-bar {
+  background: #4e342e;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  text-align: center;
+}
+
+/* Header */
+.site-header {
+  background: #f5deb3; /* lighter cream */
+  border-bottom: 3px solid #4e342e;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.school-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4e342e;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: bold;
+}
+
+.nav .cta {
+  background: #4e342e;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+/* Main Section */
+.section {
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #3e2723;
+}
+
+.lead {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Form */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fffaf0;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 2px solid #4e342e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #4e342e;
+  padding: 0 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4e342e;
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 4px;
+}
+
+/* Buttons */
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn-primary {
+  background: #4e342e;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #3e2723;
+}
+
+.btn-secondary {
+  background: #d7ccc8;
+  color: #4e342e;
+}
+
+.btn-secondary:hover {
+  background: #a1887f;
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  background: #4e342e;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
