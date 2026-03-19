@@ -312,3 +312,219 @@ body{
   .gallery-grid .gallery-item{height:130px}
   .media-left img,.media-right img{height:200px}
 }              
+
+/* ===== SCHOOL BIO SECTION ===== */
+.school-bio {
+  padding: 70px 0;
+  background: #fffaf0;
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Image */
+.bio-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Text */
+.bio-content h1 {
+  font-size: 2.2rem;
+  color: #5c3a21;
+  margin-bottom: 15px;
+}
+
+.bio-content h3 {
+  margin-top: 15px;
+  color: #a97449;
+}
+
+.bio-content p {
+  margin-bottom: 12px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Highlights */
+.bio-highlights {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.bio-highlights li {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-image img {
+    height: 250px;
+  }
+}
+
+/* ===== FOUNDER SECTION ===== */
+.founder-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Image */
+.founder-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Content */
+.founder-content h2 {
+  font-size: 2rem;
+  color: #5c3a21;
+  margin-bottom: 20px;
+}
+
+/* Speech Card */
+.speech-card {
+  background: #fffaf0;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Speech bubble effect */
+.speech-card::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  background: #fffaf0;
+  transform: rotate(45deg);
+}
+
+.speech-card p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.founder-name {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #a97449;
+}
+
+
+/* ===== VALUES SECTION ===== */
+.values-section {
+  padding: 80px 0;
+  background: #f8f3e7;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 2rem;
+  color: #5c3a21;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.value-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.value-card h3 {
+  color: #5c3a21;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  color: #555;
+}
+
+/* Hover effect */
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .founder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-image img {
+    height: 300px;
+  }
+}
+
+/* Make image container relative */
+.founder-image {
+  position: relative;
+}
+
+/* Badge styling */
+.since-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  background: linear-gradient(135deg, #a97449, #5c3a21);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+  text-align: center;
+}
+
+/* Small text */
+.since-badge span {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+/* Big year */
+.since-badge strong {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
