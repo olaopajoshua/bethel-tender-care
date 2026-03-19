@@ -7,15 +7,15 @@
 }
 
 body {
-  background: #f8f9fa;
-  color: #333;
+  background: #fffaf0; /* cream background */
+  color: #3e2b20;      /* dark cocoa text */
   line-height: 1.6;
 }
 
 /* ===== Top Bar ===== */
 .top-bar {
-  background: #003366;
-  color: #fff;
+  background: #4e342e; /* chocolate */
+  color: #fdf6e3;      /* cream text */
   font-size: 0.9rem;
   padding: 0.5rem 0;
   text-align: center;
@@ -47,7 +47,7 @@ body {
 .school-name {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #4e342e;
+  color: #5c4033; /* chocolate */
 }
 
 /* ===== Navigation ===== */
@@ -59,31 +59,31 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: #4e342e;
+  color: #5c4033; /* chocolate */
   font-weight: 500;
 }
 
 .nav a.cta {
-  background: #4e342e;
-  color: #fff;
+  background: #5c4033; /* chocolate button */
+  color: #fffaf0;      /* cream text */
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
 
 /* ===== Base / Reset ===== */
 :root{
-  --primary:#4e342e;
-  --accent:#fffb7a;
-  --muted:#6b7280;
-  --bg:#f7f9fc;
+  --primary:#5c4033;       /* chocolate */
+  --accent:#d2b48c;        /* tan/cream accent */
+  --muted:#7a6a5a;         /* cocoa muted */
+  --bg:#fffaf0;            /* cream */
   --glass: rgba(255,255,255,0.85);
-  --card-shadow: 0 8px 20px rgba(12,32,63,0.08);
+  --card-shadow: 0 8px 20px rgba(92,64,51,0.08);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
   font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
-  color:#111;
-  background: #fffaf0;
+  color:#2d1c10;
+  background: var(--bg);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.5;
@@ -100,7 +100,7 @@ body{
 .top-bar .container{display:flex;justify-content:center;align-items:center}
 
 /* ===== Header & Nav ===== */
-.site-header{background:rgba(255,255,255,0.95);position:sticky;top:0;z-index:999;border-bottom:1px solid rgba(0,64,128,0.06)}
+.site-header{background:rgba(255,255,255,0.95);position:sticky;top:0;z-index:999;border-bottom:1px solid rgba(92,64,51,0.15)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px}
 .logo{height:56px;width:auto}
@@ -109,13 +109,13 @@ body{
 .nav{display:flex}
 .nav ul{display:flex;gap:18px;align-items:center;list-style:none}
 .nav a{color:var(--primary);text-decoration:none;font-weight:600;padding:6px 8px;border-radius:6px;transition:all .18s}
-.nav a:hover{background:rgba(0,64,128,0.06)}
+.nav a:hover{background:rgba(92,64,51,0.08)}
 .nav .cta {
     background: var(--primary);
     color:#fdf6e3;
-    padding: 8px 20px; /* enough space so text stays in one line */
+    padding: 8px 20px;
     border-radius: 8px;
-    white-space: nowrap; /* prevents text wrapping */
+    white-space: nowrap;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -137,13 +137,12 @@ body{
   display: flex; align-items: center; justify-content: center; text-align: center;
   background-image: url('main.jpg'); /* REPLACE with your hero image */
   background-size: cover; background-position: center;
-  position: relative; color: #fdf6e3; padding: 60px 20px;
+  position: relative; color: #f8f3e7; padding: 60px 20px;
 }
 .hero::before {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(0,20,48,0.45),rgba(0,20,48,0.45));
+  background: rgba(0,0,0,0.5);
 }
+
 .hero-inner { position: relative; z-index: 2; max-width: 980px; }
 .hero-title { font-size: clamp(1.8rem, 4.2vw, 3.6rem); margin-bottom: 12px; font-weight: 800; letter-spacing: -0.02em; }
 .hero-sub { font-size: 1.05rem; margin-bottom: 22px; opacity: 0.95; }
@@ -153,6 +152,10 @@ body{
 .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 700; }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,0.25); color: #f8f3e7; }
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
 
 /* ===== Sections ===== */
 .section { padding: 72px 0; background: var(--bg); }
@@ -176,6 +179,10 @@ body{
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 18px; margin-top: 18px; }
 .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: var(--card-shadow); }
 .prog { background: #fff; padding: 18px; border-radius: 10px; box-shadow: var(--card-shadow); }
+.card:hover, .feature:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
 
 /* ===== Media row ===== */
 .media-row { display: flex; gap: 28px; align-items: center; }
@@ -200,11 +207,11 @@ body{
 .testimonials {
   text-align: center;
   padding: 50px 20px;
-  background: #f9f9f9;
+  background: #fdf5e6; /* cream background */
 }
 
 .testimonials h2 {
-  color: #004080;
+  color: var(--primary);
   margin-bottom: 20px;
 }
 
@@ -219,7 +226,7 @@ body{
   display: none;
   font-style: italic;
   font-size: 1.1rem;
-  color: #333;
+  color: #3e2b20;
 }
 
 .testimonial.active {
@@ -231,7 +238,7 @@ body{
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #004080;
+  color: var(--primary);
 }
 
 .testimonial-buttons {
@@ -239,8 +246,8 @@ body{
 }
 
 .testimonial-buttons button {
-  background: #004080;
-  color: #fff;
+  background: var(--primary);
+  color: #fffaf0;
   border: none;
   padding: 8px 14px;
   margin: 0 5px;
@@ -249,7 +256,7 @@ body{
 }
 
 .testimonial-buttons button:hover {
-  background: #0066cc;
+  background: #3e2723; /* deeper chocolate */
 }
 
 @keyframes fadeIn {
@@ -311,7 +318,25 @@ body{
   .stat .count{font-size:1.2rem}
   .gallery-grid .gallery-item{height:130px}
   .media-left img,.media-right img{height:200px}
-}              
+}
+
+.nav ul.show {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+/* ===== Footer ===== */
+.site-footer{background:#3e2723;color:#fff;padding:28px 0;margin-top:18px}
+.footer-links a{color:#fff;text-decoration:none;opacity:.9;display:block;margin-bottom:6px}
+
 
 /* ===== SCHOOL BIO SECTION ===== */
 .school-bio {
@@ -438,7 +463,6 @@ body{
   color: #a97449;
 }
 
-
 /* ===== VALUES SECTION ===== */
 .values-section {
   padding: 80px 0;
@@ -482,7 +506,6 @@ body{
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
-
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
@@ -528,3 +551,4 @@ body{
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
+
