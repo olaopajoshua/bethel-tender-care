@@ -26,7 +26,7 @@ body {
   padding: 0.5rem 0;
   text-align: center;
 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,6 +40,9 @@ body {
   padding: 1rem 0;
   margin: 0;
   margin-top: 40px;
+  position: sticky;
+  top: 40px; /* height of top bar */
+  z-index: 999;
 }
 
 
@@ -447,7 +450,11 @@ body{
 .founder-image img {
   width: 100%;
   max-width: 350px;
+  height: auto;              /* 🔥 THIS FIXES COMPRESSION */
+  object-fit: cover;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Content */
