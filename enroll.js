@@ -61,3 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 });
+
+const toggle = document.getElementById("navToggle");
+const nav = document.querySelector(".nav ul");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+}

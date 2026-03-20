@@ -19,32 +19,46 @@ body {
 }
 
 /* ===== Top Bar ===== */
-.top-bar {
-  background: #4e342e;
-  color: #fdf6e3;
-  font-size: 0.9rem;
-  padding: 0.5rem 0;
-  text-align: center;
-
+.top-bar{
+  background:var(--primary);
+  color:#fdf6e3;
+  font-size:0.95rem;
+  padding: 10px 0;
   position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
+  justify-content: center;
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  top: 0;            /* 🔥 REQUIRED */
+  left: 0;           /* 🔥 FIXES LEFT GAP */
+  width: 100%;       /* 🔥 FULL WIDTH */
   z-index: 1000;
 }
+.top-bar .container{display:flex;justify-content:center;align-items:center}
 
-/* ===== Header ===== */
-.site-header {
-  background: #fff;
-  border-bottom: 2px solid #eee;
-  padding: 1rem 0;
-  margin: 0;
-  margin-top: 40px;
-  position: sticky;
-  top: 40px; /* height of top bar */
-  z-index: 999;
+/* ===== Header & Nav ===== */
+.site-header{background:rgba(255,255,255,0.95);position:sticky;top: var(--topbar-height);z-index:999;border-bottom:1px solid rgba(92,64,51,0.15)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:56px;width:auto}
+.school-name{font-weight:700;color:var(--primary);display:block}
+.tagline{font-size:0.82rem;color:var(--muted)}
+.nav{display:flex}
+.nav ul{display:flex;gap:18px;align-items:center;list-style:none}
+.nav a{color:var(--primary);text-decoration:none;font-weight:600;padding:6px 8px;border-radius:6px;transition:all .18s}
+.nav a:hover{background:rgba(92,64,51,0.08)}
+.nav .cta {
+    background: var(--primary);
+    color:#fdf6e3;
+    padding: 8px 20px;
+    border-radius: 8px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
 }
-
+.nav-toggle{display:none;background:none;border:0;font-size:1.4rem}
 
 .header-inner {
   display: flex;
@@ -97,6 +111,7 @@ body {
   --bg:#fffaf0;            /* cream */
   --glass: rgba(255,255,255,0.85);
   --card-shadow: 0 8px 20px rgba(92,64,51,0.08);
+ --topbar-height: 40px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
