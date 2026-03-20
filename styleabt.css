@@ -1,7 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /* ===== Base Reset ===== */
 * {
   box-sizing: border-box;
-  margin: 0;
+    margin: 0;
   padding: 0;
   font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -10,15 +15,22 @@ body {
   background: #fffaf0; /* cream background */
   color: #3e2b20;      /* dark cocoa text */
   line-height: 1.6;
+   margin: 0;
 }
 
 /* ===== Top Bar ===== */
 .top-bar {
-  background: #4e342e; /* chocolate */
-  color: #fdf6e3;      /* cream text */
+  background: #4e342e;
+  color: #fdf6e3;
   font-size: 0.9rem;
   padding: 0.5rem 0;
   text-align: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* ===== Header ===== */
@@ -26,7 +38,10 @@ body {
   background: #fff;
   border-bottom: 2px solid #eee;
   padding: 1rem 0;
+  margin: 0;
+  margin-top: 40px;
 }
+
 
 .header-inner {
   display: flex;
@@ -69,6 +84,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
+
 
 /* ===== Base / Reset ===== */
 :root{
@@ -351,12 +367,29 @@ body{
   align-items: center;
 }
 
-/* Image */
-.bio-image img {
-  height: 300px;
+.bio-content {
   max-width: 500px;
-  margin: 0 auto;
-  display: block;
+}
+
+.bio-content p {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.bio-content h1 {
+  margin-bottom: 10px;
+}
+
+.bio-content h3 {
+  margin-top: 20px;
+}
+
+.bio-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /* Text */
@@ -412,10 +445,9 @@ body{
 }
 
 .founder-image img {
-  height: 320px;
-  max-width: 420px;
-  margin: 0 auto;
-  display: block;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
 }
 
 /* Content */
@@ -425,13 +457,11 @@ body{
   margin-bottom: 20px;
 }
 
-/* Speech Card */
 .speech-card {
   background: #fffaf0;
-  padding: 18px;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 /* Speech bubble effect */
@@ -468,9 +498,7 @@ body{
 }
 
 .values-section h2 {
-  font-size: 2rem;
-  color: #5c3a21;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* Grid */
@@ -544,4 +572,18 @@ body{
 
 .since-badge strong {
   font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.85rem;
+  opacity: 0.8;
 }

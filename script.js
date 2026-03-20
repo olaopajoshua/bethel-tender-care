@@ -1,17 +1,3 @@
-/* script.js — interactive features */
-
-/* NAV TOGGLE */
-const navToggle = document.getElementById("navToggle");
-const mainNav = document.getElementById("mainNav");
-if (navToggle && mainNav) {
-  navToggle.addEventListener("click", () => {
-    const expanded = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!expanded));
-    mainNav.style.display = expanded ? "none" : "block";
-  });
-  if (window.innerWidth <= 960) mainNav.style.display = "none";
-}
-
 /* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {

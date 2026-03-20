@@ -132,8 +132,12 @@ body {
 .nav .cta {
   background: #4e342e;
   color: #fff;
-  padding: 8px 14px;
+  padding: 10px;
   border-radius: 6px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 /* Main Section */
@@ -231,4 +235,20 @@ input, select {
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .nav .cta {
+    width: 100%;
+    text-align: center;
+  }
 }
