@@ -79,7 +79,13 @@ body {
   --glass: rgba(255,255,255,0.85);
   --card-shadow: 0 8px 20px rgba(92,64,51,0.08);
 }
-*{box-sizing:border-box;margin:0;padding:0}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
   color:#2d1c10;
