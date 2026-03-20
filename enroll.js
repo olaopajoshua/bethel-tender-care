@@ -62,11 +62,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const toggle = document.getElementById("navToggle");
-const nav = document.querySelector(".nav ul");
+const overlay = document.getElementById("navOverlay");
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
-  });
-}
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("show");
+  overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+  nav.classList.remove("show");
+  overlay.classList.remove("active");
+});
