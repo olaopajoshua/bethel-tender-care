@@ -1,12 +1,7 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 /* ===== Base Reset ===== */
 * {
   box-sizing: border-box;
-    margin: 0;
+  margin: 0;
   padding: 0;
   font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -15,49 +10,24 @@ body {
   background: #fffaf0; /* cream background */
   color: #3e2b20;      /* dark cocoa text */
   line-height: 1.6;
-   margin: 0;
 }
 
 /* ===== Top Bar ===== */
-.top-bar{
-  background:var(--primary);
-  color:#fdf6e3;
-  font-size:0.95rem;
-  padding:8px 0;
+.top-bar {
+  background: #4e342e; /* chocolate */
+  color: #fdf6e3;      /* cream text */
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  text-align: center;
 }
-.top-bar .container{display:flex;justify-content:center;align-items:center}
 
-/* ===== Header & Nav ===== */
-.site-header{background:rgba(255,255,255,0.95);position:sticky;top:0;z-index:999;border-bottom:1px solid rgba(92,64,51,0.15)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.brand{display:flex;align-items:center;gap:12px}
-.logo{height:56px;width:auto}
-.school-name{font-weight:700;color:var(--primary);display:block}
-.tagline{font-size:0.82rem;color:var(--muted)}
-.nav{display:flex}
-.nav ul{display:flex;gap:18px;align-items:center;list-style:none}
-.nav a{color:var(--primary);text-decoration:none;font-weight:600;padding:6px 8px;border-radius:6px;transition:all .18s}
-.nav a:hover{background:rgba(92,64,51,0.08)}
-.nav .cta {
-    background: var(--primary);
-    color:#fdf6e3;
-    padding: 8px 20px;
-    border-radius: 8px;
-    white-space: nowrap;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
+/* ===== Header ===== */
+.site-header {
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  padding: 1rem 0;
 }
-.nav-toggle{display:none;background:none;border:0;font-size:1.4rem}
 
-:root {
-  --primary: #5c3a21;   /* Chocolate */
-  --accent: #a97449;    /* Lighter chocolate for buttons/accents */
-  --bg: #f8f3e7;        /* Cream background */
-  --muted: #7a5c48;     /* Muted brown text */
-  --card-shadow: 0 2px 8px rgba(0,0,0,0.12);
-}
 .header-inner {
   display: flex;
   align-items: center;
@@ -100,7 +70,6 @@ body {
   border-radius: 5px;
 }
 
-
 /* ===== Base / Reset ===== */
 :root{
   --primary:#5c4033;       /* chocolate */
@@ -109,7 +78,6 @@ body {
   --bg:#fffaf0;            /* cream */
   --glass: rgba(255,255,255,0.85);
   --card-shadow: 0 8px 20px rgba(92,64,51,0.08);
- --topbar-height: 40px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
@@ -120,7 +88,7 @@ body{
   -moz-osx-font-smoothing:grayscale;
   line-height:1.5;
 }
-.container{max-width:1000px;margin:0 auto;padding:0 20px}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
 
 /* ===== Top Bar ===== */
 .top-bar{
