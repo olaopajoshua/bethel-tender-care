@@ -23,21 +23,12 @@ body {
   background:var(--primary);
   color:#fdf6e3;
   font-size:0.95rem;
-  padding: 10px 0;
-  position: sticky;
-  justify-content: center;
-  height: var(--topbar-height);
-  display: flex;
-  align-items: center;
-  top: 0;            /* 🔥 REQUIRED */
-  left: 0;           /* 🔥 FIXES LEFT GAP */
-  width: 100%;       /* 🔥 FULL WIDTH */
-  z-index: 1000;
+  padding:8px 0;
 }
 .top-bar .container{display:flex;justify-content:center;align-items:center}
 
 /* ===== Header & Nav ===== */
-.site-header{background:rgba(255,255,255,0.95);position:sticky;top: var(--topbar-height);z-index:999;border-bottom:1px solid rgba(92,64,51,0.15)}
+.site-header{background:rgba(255,255,255,0.95);position:sticky;top:0;z-index:999;border-bottom:1px solid rgba(92,64,51,0.15)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px}
 .logo{height:56px;width:auto}
@@ -60,6 +51,13 @@ body {
 }
 .nav-toggle{display:none;background:none;border:0;font-size:1.4rem}
 
+:root {
+  --primary: #5c3a21;   /* Chocolate */
+  --accent: #a97449;    /* Lighter chocolate for buttons/accents */
+  --bg: #f8f3e7;        /* Cream background */
+  --muted: #7a5c48;     /* Muted brown text */
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
 .header-inner {
   display: flex;
   align-items: center;
