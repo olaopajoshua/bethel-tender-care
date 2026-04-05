@@ -33,7 +33,16 @@
     <h1>Application — Enroll Now</h1>
     <p class="lead">Complete this form and we'll contact you with next steps.</p>
 
-    <form id="enrollForm" class="form-grid" novalidate>
+   <form 
+  id="enrollForm" 
+  class="form-grid" 
+  action="https://formspree.io/f/xreorzgj" 
+  method="POST"
+>
+
+<input type="hidden" name="_subject" value="New Enrollment Application">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
       <fieldset>
         <legend>Child’s Information</legend>
         <label>
@@ -110,7 +119,7 @@
         </label>
         <label>
           Email Address (if any)
-          <input name="email" type="email" />
+          <input name="email" type="email" required/>
         </label>
       </fieldset>
 
@@ -146,5 +155,7 @@
   </footer>
 
   <script src="enroll.js"></script>
+
+  <div class="nav-overlay" id="navOverlay"></div>
 </body>
 </html>

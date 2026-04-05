@@ -21,11 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
     field.parentNode.appendChild(error);
   }
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    clearErrors();
+form.addEventListener('submit', e => {
+  clearErrors();
 
-    let valid = true;
+  let valid = true;
 
     // Check required fields
     const requiredFields = form.querySelectorAll('[required]');
@@ -50,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
       messageDiv.textContent = '⚠ Please fix the errors above and try again.';
       messageDiv.style.color = '#5C4033'; // chocolate warning
       messageDiv.style.fontWeight = 'bold';
+      // Allow form to submit to Formspree if valid
+     messageDiv.textContent = 'Submitting...';
+     messageDiv.style.color = '#5c3a21';
       return;
     }
 
